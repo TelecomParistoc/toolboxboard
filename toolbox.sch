@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -16244,6 +16244,10 @@ RJ45 Jack connectors&lt;br&gt;
 <part name="R36" library="rcl" deviceset="R-US_" device="M0805" value="22k"/>
 <part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="P+13" library="supply1" deviceset="VCC" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="C10" library="rcl" deviceset="C-US" device="C0805" value="100n"/>
+<part name="C11" library="rcl" deviceset="C-US" device="C0805" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -16401,6 +16405,10 @@ RJ45 Jack connectors&lt;br&gt;
 <instance part="R36" gate="G$1" x="121.92" y="40.64" rot="R270"/>
 <instance part="P+12" gate="VCC" x="121.92" y="48.26"/>
 <instance part="GND15" gate="1" x="121.92" y="22.86"/>
+<instance part="P+13" gate="VCC" x="191.77" y="63.5"/>
+<instance part="GND16" gate="1" x="191.77" y="49.53"/>
+<instance part="C10" gate="G$1" x="191.77" y="57.15"/>
+<instance part="C11" gate="G$1" x="209.55" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -16540,6 +16548,11 @@ RJ45 Jack connectors&lt;br&gt;
 <segment>
 <pinref part="R36" gate="G$1" pin="1"/>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="P+13" gate="VCC" pin="VCC"/>
+<wire x1="191.77" y1="60.96" x2="191.77" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -16753,6 +16766,10 @@ RJ45 Jack connectors&lt;br&gt;
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -17391,6 +17408,9 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="199.39" y1="26.67" x2="209.55" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="209.55" y1="26.67" x2="209.55" y2="13.97" width="0.1524" layer="91"/>
 <junction x="209.55" y="13.97"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="209.55" y1="26.67" x2="209.55" y2="33.02" width="0.1524" layer="91"/>
+<junction x="209.55" y="26.67"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -17416,11 +17436,15 @@ RJ45 Jack connectors&lt;br&gt;
 <pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="5.08" x2="205.74" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="39.37" x2="205.74" y2="54.61" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="54.61" x2="217.17" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="54.61" x2="209.55" y2="54.61" width="0.1524" layer="91"/>
 <junction x="217.17" y="54.61"/>
+<wire x1="209.55" y1="54.61" x2="217.17" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="39.37" x2="205.74" y2="39.37" width="0.1524" layer="91"/>
 <junction x="200.66" y="39.37"/>
 <junction x="205.74" y="39.37"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="209.55" y1="40.64" x2="209.55" y2="54.61" width="0.1524" layer="91"/>
+<junction x="209.55" y="54.61"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -17515,7 +17539,7 @@ RJ45 Jack connectors&lt;br&gt;
 <approved hash="113,1,104.335,105.452,DEBUG,,,,,"/>
 <approved hash="113,1,243.84,38.5868,D6,,,,,"/>
 <approved hash="113,1,217.657,34.29,D7,,,,,"/>
-<approved hash="113,1,-25.4,26.8647,SV1,,,,,"/>
+<approved hash="113,1,-25.4,26.8647,SENSORS,,,,,"/>
 <approved hash="113,1,116.448,-12.7,RPI,,,,,"/>
 <approved hash="113,1,97.472,-12.7,RPI2,,,,,"/>
 <approved hash="113,1,193.144,80.01,USB,,,,,"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -18854,12 +18854,12 @@ Source: http://www.osram.convergy.de/</description>
 <errors>
 <approved hash="104,1,63.5,78.74,IC1,VDD,VCC,,,"/>
 <approved hash="104,1,58.42,12.7,IC1,VSS,GND,,,"/>
-<approved hash="104,1,224.79,76.2,IC3,GND,N$67,,,"/>
-<approved hash="104,1,227.33,76.2,IC3,GND,N$67,,,"/>
-<approved hash="104,1,229.87,76.2,IC3,GND,N$67,,,"/>
-<approved hash="104,1,232.41,76.2,IC3,GND,N$67,,,"/>
+<approved hash="104,1,224.79,76.2,IC3,GND,GND_MOTOR,,,"/>
+<approved hash="104,1,227.33,76.2,IC3,GND,GND_MOTOR,,,"/>
+<approved hash="104,1,229.87,76.2,IC3,GND,GND_MOTOR,,,"/>
+<approved hash="104,1,232.41,76.2,IC3,GND,GND_MOTOR,,,"/>
 <approved hash="104,1,241.3,-7.62,U2,+VS,N$61,,,"/>
-<approved hash="104,1,241.3,-30.48,U2,-VS,N$67,,,"/>
+<approved hash="104,1,241.3,-30.48,U2,-VS,GND_MOTOR,,,"/>
 <approved hash="104,1,199.39,39.37,U3,VDD1A,N$68,,,"/>
 <approved hash="104,1,199.39,36.83,U3,VDD2A,VCC,,,"/>
 <approved hash="104,1,199.39,34.29,U3,VDD1B,N$68,,,"/>
@@ -18902,6 +18902,8 @@ Source: http://www.osram.convergy.de/</description>
 <approved hash="113,1,-9.89466,11.43,BUTTONS,,,,,"/>
 <approved hash="113,1,258.414,43.18,AX12,,,,,"/>
 <approved hash="113,1,269.703,43.18,AX12-2,,,,,"/>
+<approved hash="113,1,143.832,-17.78,3V3,,,,,"/>
+<approved hash="113,1,155.262,-19.05,5V,,,,,"/>
 </errors>
 </schematic>
 </drawing>

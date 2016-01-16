@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.0025" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
@@ -235,6 +235,13 @@
 <wire x1="32.5755" y1="15.24" x2="31.9405" y2="15.621" width="0.15" layer="25"/>
 <wire x1="32.5755" y1="15.621" x2="33.0835" y2="15.621" width="0.15" layer="25"/>
 <wire x1="31.877" y1="16.002" x2="31.877" y2="15.24" width="0.15" layer="25"/>
+<wire x1="33.274" y1="2.032" x2="33.274" y2="2.667" width="0.15" layer="25"/>
+<wire x1="33.274" y1="2.667" x2="32.893" y2="3.302" width="0.15" layer="25"/>
+<wire x1="32.893" y1="3.302" x2="33.274" y2="3.302" width="0.15" layer="25"/>
+<wire x1="33.274" y1="3.302" x2="33.655" y2="3.302" width="0.15" layer="25"/>
+<wire x1="33.655" y1="3.302" x2="33.274" y2="2.667" width="0.15" layer="25"/>
+<wire x1="33.274" y1="3.302" x2="33.274" y2="3.81" width="0.15" layer="25"/>
+<wire x1="32.893" y1="2.6035" x2="33.655" y2="2.6035" width="0.15" layer="25"/>
 </plain>
 <libraries>
 <library name="con-lstb">
@@ -2412,7 +2419,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="31.0515" y="34.9885" size="1.27" layer="26" rot="MR270"/>
 </element>
 <element name="R14" library="rcl" package="M0805" value="2.2k" x="32.5755" y="24.638" smashed="yes" rot="MR270">
-<attribute name="NAME" x="33.147" y="22.7965" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="33.147" y="23.0505" size="1.27" layer="26" rot="MR270"/>
 </element>
 <element name="R15" library="rcl" package="M0805" value="2.2k" x="34.0995" y="29.718" smashed="yes" rot="MR270">
 <attribute name="NAME" x="33.655" y="34.9885" size="1.27" layer="26" rot="MR270"/>
@@ -2427,19 +2434,19 @@ Your Eurocircuits Team
 <attribute name="NAME" x="9.652" y="23.6855" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="R19" library="rcl" package="M0805" value="22k" x="41.8465" y="5.588" smashed="yes" rot="MR0">
-<attribute name="NAME" x="39.878" y="4.953" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="39.6875" y="4.699" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="R2" library="rcl" package="M0805" value="2.2k" x="22.4155" y="24.892" smashed="yes" rot="MR90">
 <attribute name="NAME" x="23.749" y="23.622" size="1.27" layer="26" rot="MR90"/>
 </element>
 <element name="R20" library="rcl" package="M0805" value="22k" x="41.8465" y="8.128" smashed="yes" rot="MR0">
-<attribute name="NAME" x="39.878" y="7.4295" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="39.6875" y="6.6675" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="R21" library="rcl" package="M0805" value="22k" x="41.8465" y="10.668" smashed="yes" rot="MR0">
-<attribute name="NAME" x="39.878" y="10.033" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="39.6875" y="8.5725" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="R23" library="rcl" package="M0805" value="22k" x="41.8465" y="13.208" smashed="yes" rot="MR0">
-<attribute name="NAME" x="39.8145" y="12.573" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="36.1315" y="15.24" size="1.27" layer="26" rot="MR180"/>
 </element>
 <element name="R24" library="rcl" package="M0805" value="22k" x="46.9265" y="14.478" smashed="yes" rot="MR0">
 <attribute name="NAME" x="52.451" y="13.9065" size="1.27" layer="26" rot="MR0"/>
@@ -2601,7 +2608,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="50.3555" y="14.732" size="1.27" layer="27"/>
 </element>
 <element name="R22" library="rcl" package="M0805" value="22k" x="41.8465" y="15.748" smashed="yes" rot="MR0">
-<attribute name="NAME" x="39.8145" y="14.986" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="43.3705" y="17.0815" size="1.27" layer="26" rot="MR0"/>
 </element>
 <element name="R36" library="rcl" package="M0805" value="22k" x="46.9265" y="17.018" smashed="yes" rot="MR0">
 <attribute name="NAME" x="52.3875" y="16.4465" size="1.27" layer="26" rot="MR0"/>
@@ -2638,12 +2645,11 @@ Your Eurocircuits Team
 <element name="R43" library="rcl" package="M0805" value="1k" x="36.6395" y="13.6525" smashed="yes">
 <attribute name="NAME" x="35.052" y="14.859" size="1.27" layer="25"/>
 </element>
-<element name="R44" library="rcl" package="M0805" value="1k" x="37.6555" y="11.6205" smashed="yes" rot="MR90">
-<attribute name="NAME" x="38.9255" y="10.3505" size="1.27" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="35.1155" y="10.3505" size="1.27" layer="28" rot="MR90"/>
+<element name="R44" library="rcl" package="M0805" value="1k" x="37.465" y="11.6205" smashed="yes" rot="MR90">
+<attribute name="NAME" x="38.481" y="10.7315" size="1.27" layer="26" rot="MR90"/>
 </element>
 <element name="D8" library="diode" package="SOD523" value="" x="34.0995" y="2.921" smashed="yes" rot="MR90">
-<attribute name="NAME" x="34.7345" y="2.286" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="36.957" y="1.5875" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="32.1945" y="2.286" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="D9" library="diode" package="SOD523" value="" x="32.5755" y="9.5885" smashed="yes">
@@ -3766,7 +3772,7 @@ Your Eurocircuits Team
 <wire x1="37.338" y1="12.573" x2="37.2745" y2="12.6365" width="0.3048" layer="16"/>
 <wire x1="37.6555" y1="12.573" x2="37.338" y2="12.573" width="0.3048" layer="16"/>
 <wire x1="42.672" y1="15.875" x2="42.7965" y2="15.748" width="0.3048" layer="16"/>
-<wire x1="37.6555" y1="12.573" x2="37.6555" y2="12.5705" width="0.3048" layer="16"/>
+<wire x1="37.6555" y1="12.573" x2="37.465" y2="12.5705" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$40">
 <contactref element="IC1" pad="35"/>
@@ -4317,7 +4323,7 @@ Your Eurocircuits Team
 <wire x1="37.2745" y1="10.668" x2="37.6555" y2="10.668" width="0.3048" layer="16"/>
 <wire x1="36.3855" y1="9.779" x2="37.2745" y2="10.668" width="0.3048" layer="16"/>
 <wire x1="35.3695" y1="9.779" x2="36.3855" y2="9.779" width="0.3048" layer="16"/>
-<wire x1="37.6555" y1="10.668" x2="37.6555" y2="10.6705" width="0.3048" layer="16"/>
+<wire x1="37.6555" y1="10.668" x2="37.465" y2="10.6705" width="0.3048" layer="16"/>
 <wire x1="35.3695" y1="9.779" x2="35.3275" y2="9.754" width="0.3048" layer="16"/>
 <contactref element="D12" pad="A"/>
 <wire x1="38.4175" y1="10.287" x2="38.989" y2="10.287" width="0.3048" layer="1"/>
@@ -4334,7 +4340,7 @@ Your Eurocircuits Team
 <wire x1="38.989" y1="10.4775" x2="39.116" y2="10.4775" width="0.3048" layer="16"/>
 <wire x1="38.7985" y1="10.668" x2="38.989" y2="10.4775" width="0.3048" layer="16"/>
 <wire x1="37.7825" y1="10.668" x2="38.7985" y2="10.668" width="0.3048" layer="16"/>
-<wire x1="37.7825" y1="10.668" x2="37.6555" y2="10.6705" width="0.3048" layer="16"/>
+<wire x1="37.7825" y1="10.668" x2="37.465" y2="10.6705" width="0.3048" layer="16"/>
 <via x="39.116" y="10.4775" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="N$67">

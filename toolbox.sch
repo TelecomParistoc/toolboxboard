@@ -17573,6 +17573,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="D11" library="diode" deviceset="DIODE-" device="SOD523"/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
 <part name="D12" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="C12" library="rcl" deviceset="C-US" device="C0805" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -17753,6 +17754,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="D11" gate="G$1" x="110.49" y="48.26" rot="MR270"/>
 <instance part="P+15" gate="VCC" x="116.84" y="48.26"/>
 <instance part="D12" gate="G$1" x="116.84" y="38.1" rot="MR90"/>
+<instance part="C12" gate="G$1" x="267.97" y="-24.13"/>
 </instances>
 <busses>
 </busses>
@@ -18700,11 +18702,15 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="278.13" y1="-17.78" x2="278.13" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="278.13" y1="-20.32" x2="262.89" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="278.13" y1="-20.32" x2="267.97" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="278.13" y="-20.32"/>
 <pinref part="U2" gate="A" pin="+VIN"/>
+<wire x1="267.97" y1="-20.32" x2="262.89" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="262.89" y1="-20.32" x2="262.89" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="262.89" y1="-25.4" x2="241.3" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="267.97" y1="-21.59" x2="267.97" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="267.97" y="-20.32"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -18763,9 +18769,10 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="232.41" y="76.2"/>
 <wire x1="283.21" y1="76.2" x2="242.57" y2="76.2" width="0.1524" layer="91"/>
 <junction x="242.57" y="76.2"/>
-<wire x1="256.54" y1="-30.48" x2="278.13" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="-30.48" x2="267.97" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="256.54" y="-30.48"/>
 <pinref part="R35" gate="G$1" pin="1"/>
+<wire x1="267.97" y1="-30.48" x2="278.13" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="278.13" y1="-30.48" x2="283.21" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="278.13" y="-30.48"/>
 <wire x1="254" y1="13.97" x2="283.21" y2="13.97" width="0.1524" layer="91"/>
@@ -18789,6 +18796,9 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="209.55" y1="26.67" x2="209.55" y2="33.02" width="0.1524" layer="91"/>
 <junction x="209.55" y="26.67"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="267.97" y1="-29.21" x2="267.97" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="267.97" y="-30.48"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -18957,20 +18967,25 @@ Source: http://www.osram.convergy.de/</description>
 <approved hash="111,1,-15.24,40.64,N$1,,,,,"/>
 <approved hash="111,1,3.81,3.81,N$24,,,,,"/>
 <approved hash="111,1,6.35,6.35,N$26,,,,,"/>
-<approved hash="111,1,109.22,50.8,N$44,,,,,"/>
-<approved hash="111,1,109.22,55.88,N$42,,,,,"/>
-<approved hash="111,1,111.76,53.34,N$43,,,,,"/>
-<approved hash="111,1,114.3,50.8,N$44,,,,,"/>
-<approved hash="111,1,116.84,53.34,N$43,,,,,"/>
-<approved hash="111,1,116.84,58.42,N$41,,,,,"/>
-<approved hash="111,1,114.3,55.88,N$42,,,,,"/>
-<approved hash="111,1,111.76,58.42,N$41,,,,,"/>
-<approved hash="111,1,121.92,36.83,N$57,,,,,"/>
-<approved hash="111,1,121.92,48.26,N$44,,,,,"/>
+<approved hash="111,1,127,50.8,N$44,,,,,"/>
+<approved hash="111,1,127,55.88,N$42,,,,,"/>
+<approved hash="111,1,129.54,53.34,N$43,,,,,"/>
+<approved hash="111,1,132.08,50.8,N$44,,,,,"/>
+<approved hash="111,1,134.62,53.34,N$43,,,,,"/>
+<approved hash="111,1,134.62,58.42,N$41,,,,,"/>
+<approved hash="111,1,132.08,55.88,N$42,,,,,"/>
+<approved hash="111,1,129.54,58.42,N$41,,,,,"/>
+<approved hash="111,1,142.24,36.83,N$57,,,,,"/>
+<approved hash="111,1,142.24,48.26,N$44,,,,,"/>
+<approved hash="111,1,110.49,58.42,N$67,,,,,"/>
+<approved hash="111,1,110.49,58.42,N$67,,,,,"/>
+<approved hash="111,1,107.95,50.8,N$71,,,,,"/>
+<approved hash="111,1,107.95,50.8,N$71,,,,,"/>
+<approved hash="111,1,116.84,36.83,N$57,,,,,"/>
 <approved hash="113,1,-11.6247,-25.3723,SENSORS_VCC_SELECT,,,,,"/>
 <approved hash="113,1,-20.3623,44.6447,ICSP,,,,,"/>
 <approved hash="113,1,-17.0568,-13.7753,SENSORS_VCC,,,,,"/>
-<approved hash="113,1,132.08,101.777,LOGIC,,,,,"/>
+<approved hash="113,1,147.32,101.777,LOGIC,,,,,"/>
 <approved hash="113,1,210.82,103.379,MOTORS,,,,,"/>
 <approved hash="113,1,-1.75683,44.45,D1,,,,,"/>
 <approved hash="113,1,2.05317,30.48,D2,,,,,"/>
@@ -18985,13 +19000,18 @@ Source: http://www.osram.convergy.de/</description>
 <approved hash="113,1,116.448,-12.7,RPI,,,,,"/>
 <approved hash="113,1,97.472,-12.7,RPI2,,,,,"/>
 <approved hash="113,1,193.144,80.01,USB,,,,,"/>
-<approved hash="113,1,140.167,63.5,COLLISION,,,,,"/>
+<approved hash="113,1,155.407,63.5,COLLISION,,,,,"/>
 <approved hash="113,1,13.97,102.413,LEDS,,,,,"/>
 <approved hash="113,1,-9.89466,11.43,BUTTONS,,,,,"/>
 <approved hash="113,1,258.414,43.18,AX12,,,,,"/>
 <approved hash="113,1,269.703,43.18,AX12-2,,,,,"/>
 <approved hash="113,1,143.832,-17.78,3V3,,,,,"/>
 <approved hash="113,1,155.262,-19.05,5V,,,,,"/>
+<approved hash="113,1,108.437,60.96,D8,,,,,"/>
+<approved hash="113,1,110.977,58.42,D9,,,,,"/>
+<approved hash="113,1,107.463,50.3285,D10,,,,,"/>
+<approved hash="113,1,110.003,47.8823,D11,,,,,"/>
+<approved hash="113,1,117.327,38.5714,D12,,,,,"/>
 </errors>
 </schematic>
 </drawing>
